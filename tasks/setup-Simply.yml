@@ -1,0 +1,8 @@
+---
+- name: Ensure nginx is installed.
+  community.general.apt_rpm:
+    name: "{{ nginx_package_name }}"
+    state: present
+    # update_cache: true
+  become: true
+...
